@@ -1,5 +1,10 @@
 {
-    "vim.easymotion": true,
+  "json.schemas": [
+    
+
+
+  ],
+  "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
@@ -15,16 +20,25 @@
       "before": ["<leader>", "d"],
       "after": ["d", "d"]
     },
-
     //Navigation
-    { "before": ["<S-h>"], "commands": [":bprevious"] },
-    { "before": ["<S-l>"], "commands": [":bnext"] },
-
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
     // splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
-    { "before": ["leader", "s"], "commands": [":split"] },
-
-     // panes
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    // panes
     {
       "before": ["leader", "h"],
       "commands": ["workbench.action.focusLeftGroup"]
@@ -41,13 +55,11 @@
       "before": ["leader", "l"],
       "commands": ["workbench.action.focusRightGroup"]
     },
-
-  // FILE TREE
+    // FILE TREE
     {
-      "before": ["leader", "n", "e"],
+      "before": ["leader", "e"],
       "commands": ["workbench.explorer.fileView.focus"]
     },
-
     {
       "before": ["<C-n>"],
       "commands": [":nohl"]
@@ -56,12 +68,204 @@
       "before": ["K"],
       "commands": ["lineBreakInsert"],
       "silent": true
+    },
+    {
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "o"],
+      "commands": ["workbench.action.files.openFile"]
+    },
+    {
+      "before": ["leader", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.closeWindow"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.quit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "a"],
+      "commands": ["workbench.action.files.saveAll"]
+    },
+    {
+      "before": ["leader", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
+    },
+    {
+      "before": ["leader", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["leader", "r"],
+      "commands": ["workbench.action.reloadWindow"]
+    },
+    {
+      "before": ["leader", "g"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["leader", "m"],
+      "commands": ["workbench.action.openGlobalSettings"]
+    },
+    {
+      "before": ["leader", "n"],
+      "commands": ["workbench.action.openNewWindow"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
+    },
+    {
+      "before": ["leader", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["leader", "i"],
+      "commands": ["workbench.action.toggleSidebarPosition"]
+    },
+    {
+      "before": ["leader", "u"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["leader", "y"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusLeftGroup"]
     }
   ],
   "vim.leader": "<space>",
-
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false
   },
+  "editor.lineNumbers": "relative",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.guides.bracketPairs": "active",
+  "window.commandCenter": false,
+  "workbench.colorTheme": "Lunar-dark-theme",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "explorer.compactFolders": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "background.backgroundOpacity": [0.9, 0.9, 0.9, 0.9],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "window.titleBarStyle": "custom",
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+
+  "sonarlint.rules": {
+    "typescript:S6544": {
+      "level": "off"
+    },
+    "terraform:S4423": {
+      "level": "off"
+    },
+    "typescript:S125": {
+      "level": "off"
+    },
+    "typescript:S1082": {
+      "level": "off"
+    },
+    "typescript:S2201": {
+      "level": "off"
+    },
+    "typescript:S3358": {
+      "level": "off"
+    }
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "workbench.editor.enablePreview": false,
+  "files.autoSave": "afterDelay",
+  "dart.hotReloadProgress": "statusBar",
+  "dart.flutterHotReloadOnSave": "all",
+  "dart.flutterGenerateLocalizationsOnSave": "all",
+  "dart.hotReloadOnSave": "all",
+  "redhat.telemetry.enabled": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.stickyScroll.enabled": true,
+  "tabnine.experimentalAutoImports": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "workbench.productIconTheme": "fluent-icons",
+  "dart.openDevTools": "flutter",
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "glassit.alpha": 255,
+
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "background.backgroundBlur": ["0", "0", "0", "0"],
+  "workbench.layoutControl.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
+  "python.defaultInterpreterPath": "C:\\Python311\\python.exe",
+  "vim.commandLineModeKeyBindings": [],
+  "editor.cursorSurroundingLines": 25,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "background.windowBackgrounds": [
+    "d:/Old Images/Wallpapers/studio-ghibli-backgrounds-114.png"
+  ],
+  "extensions.ignoreRecommendations": true,
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "hidden",
+  
 }
