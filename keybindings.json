@@ -12,10 +12,6 @@
       "when": "terminalFocus"
     },
     {
-      "key": "shift+j",
-      "command": "workbench.action.togglePanel"
-    },
-    {
       "key": "shift+n",
       "command": "workbench.action.terminal.new",
       "when": "terminalFocus"
@@ -46,5 +42,19 @@
     {
       "key": "ctrl+shift+5",
       "command": "editor.emmet.action.matchTag"
+    },
+    {
+      "key": "ctrl+/",
+      "command": "editor.action.addCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+k ctrl+c",
+      "command": "-editor.action.addCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+shift+oem_102",
+      "command": "workbench.action.toggleActivityBarVisibility"
     }
   ]
