@@ -1,1 +1,1 @@
-# vscode_vim_bindings
+# VS Code Vim Bindings
